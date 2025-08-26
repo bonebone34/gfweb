@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/cuteletter.tsx","./src/components/floatingtulip.tsx","./src/components/gallery.tsx","./src/components/header.tsx","./src/components/letter.tsx","./src/components/musicplayer.tsx","./src/components/vantabackground.tsx","./src/components/ui/button.tsx","./src/lib/utils.ts"],"version":"5.8.3"}
