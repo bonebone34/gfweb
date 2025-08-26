@@ -19,7 +19,7 @@ export default function CuteLetter() {
 
   return (
     <div className="text-center mt-24 flex flex-col items-center gap-6 relative">
-      {/* Floating decorative hearts & sparkles around */}
+      {/* Floating decorative hearts & sparkles */}
       <div className="absolute inset-0 pointer-events-none">
         {Array.from({ length: 10 }).map((_, i) => (
           <motion.span
@@ -71,7 +71,7 @@ export default function CuteLetter() {
           >
             {/* Envelope base */}
             <motion.div
-              className="w-64 h-40 rounded-b-xl shadow-lg relative overflow-hidden border-4 bg-gradient-to-br from-pink-200 via-pink-300 to-pink-200"
+              className="w-72 h-44 rounded-b-xl shadow-lg relative overflow-hidden border-4 bg-gradient-to-br from-pink-200 via-pink-300 to-pink-200"
               style={{
                 borderImage: "linear-gradient(45deg, pink, #ffd6e8, #ffb6c1) 1",
                 boxShadow: "0 0 20px rgba(255, 192, 203, 0.6)",
@@ -83,30 +83,29 @@ export default function CuteLetter() {
                 initial={{ rotateX: 0 }}
                 animate={{ rotateX: -180 }}
                 transition={{ duration: 0.8, ease: "easeInOut", delay: 0.5 }}
-                style={{
-                  transformOrigin: "top",
-                }}
+                style={{ transformOrigin: "top" }}
               />
             </motion.div>
 
-            {/* Letter sliding out with floating hearts inside */}
-            <motion.div
-              className="absolute top-0 bg-white rounded-lg shadow-md p-6 w-56 text-pink-700 font-sans border-4 overflow-hidden"
-              style={{
-                borderImage: "linear-gradient(45deg, pink, #ffd6e8, #ffb6c1) 1",
-                boxShadow: "0 0 15px rgba(255, 182, 193, 0.8)",
-              }}
-              initial={{ y: "100%", opacity: 0 }}
-              animate={{ y: "-60%", opacity: 1 }}
-              transition={{
-                duration: 0.9,
-                ease: "easeOut",
-                delay: 1.2,
-                type: "spring",
-                stiffness: 80,
-              }}
-            >
-              {/* Subtle floating hearts inside */}
+            {/* Letter sliding out */}
+<motion.div
+  className="absolute top-0 bg-white rounded-lg shadow-md p-6 w-[90vw] sm:w-[500px] max-w-3xl text-pink-700 font-sans border-4 overflow-hidden"
+  style={{
+    borderImage: "linear-gradient(45deg, pink, #ffd6e8, #ffb6c1) 1",
+    boxShadow: "0 0 15px rgba(255, 182, 193, 0.8)",
+  }}
+  initial={{ y: "100%", opacity: 0 }}
+  animate={{ y: "-55%", opacity: 1 }}
+  transition={{
+    duration: 0.9,
+    ease: "easeOut",
+    delay: 1.2,
+    type: "spring",
+    stiffness: 80,
+  }}
+>
+
+              {/* Floating hearts inside letter */}
               <div className="absolute inset-0 pointer-events-none">
                 {Array.from({ length: 6 }).map((_, i) => (
                   <motion.span
@@ -129,14 +128,31 @@ export default function CuteLetter() {
                 ))}
               </div>
 
-              {/* Letter text */}
-              <p className="font-bold text-pink-500 relative z-10">Dear Milende💖,</p>
-              <p className="mt-2 text-sm leading-relaxed relative z-10">
-                Happy 13th months of love! 🌸  
-                Every day with you is magical, and I’m so grateful for every moment we share.  
-                You are my happiness and my forever. 💕
+              {/* Letter text with proper formatting */}
+              <p className="font-bold text-pink-500 mb-4">Dear Milende 💖,</p>
+
+              <p className="text-sm leading-relaxed mb-3">
+                Happy monthsary, my love! I hope you know how much you mean to me baby. 
+                You are everything I could've ever asked for, the only person I would want to go 
+                through anything in this world with. Please accept this little surprise letter of mine.
               </p>
-              <p className="mt-2 font-semibold relative z-10">Yours Truly, 💌</p>
+
+              <p className="text-sm leading-relaxed mb-3">
+                I hope you're doing well, my baby. If not, just message me or call me! 
+                I'll always come and do my best to fix everything for you. Just come to me 
+                when everything feels heavy. Run to me with every inconvenience. Come by my side
+                through happiness & sadness. I have my arms wide open only you for my baby, ALWAYS FOR YOUUU, ALWAYS!!!
+              </p>
+
+              <p className="text-sm leading-relaxed mb-3">
+                Come to me all the way to me my baby girl you are always safe. 
+                I love you so very much baby. I hope I'm able to fill your face with a smile,
+                I hope this little website and letter of mine helps your day be better.
+                I know you're not feeling well my dear so please don't worry too much okay?
+                You will always be loved by me, ALWAYS!!!!
+              </p>
+
+              <p className="mt-4 font-semibold">Yours Truly, 💌</p>
             </motion.div>
           </motion.div>
         )}

@@ -51,7 +51,7 @@ export default function MusicPlayer() {
         <AnimatePresence>
           {showBubble && (
             <motion.div
-              className="absolute top-0 left-[-140px] w-36 p-3 bg-pink-400 text-white rounded-2xl shadow-lg text-sm"
+              className="absolute top-0 left-[-80px] w-36 p-3 bg-pink-400 text-white rounded-2xl shadow-lg text-sm"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.5 }}
