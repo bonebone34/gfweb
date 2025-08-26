@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  base: "/website-gf/", // ✅ Required for GitHub Pages, use your repo name here
+  base: "/gfweb/", // ✅ Required for GitHub Pages, use your repo name here
   plugins: [react()],
   resolve: {
     alias: {
@@ -11,3 +11,4 @@ export default defineConfig({
     },
   },
 });
+a
